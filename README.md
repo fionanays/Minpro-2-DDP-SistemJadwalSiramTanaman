@@ -12,7 +12,8 @@ Sistem Siram Tanaman adalah program yang saya buat untuk mengecek atau mengetahu
 # FLOWCHART
 
 ## Gambar Flowchart
-<img width="1491" height="1172" alt="minpro_2 drawio (2)" src="https://github.com/user-attachments/assets/2f4a2b55-6f17-4e05-b7a4-2e8c92a46610" />
+<img width="1491" height="1172" alt="minpro_2 drawio" src="https://github.com/user-attachments/assets/382000eb-840b-4874-8aed-e544106df549" />
+
 
 ## Penjelasan Flowchart
 1.Program akan menampilkan tampilan login
@@ -61,25 +62,32 @@ Pengguna/admin menginput id tanaman yang ingin diubah status siramnya. Jika mere
 Sebelum menghapus sistem memanggil fungsi lihat_tanaman(). Jika daftar ternyata kosong (len == 0), fungsi langsung berhenti (return daftar_tanaman) tanpa meminta input ID dari pengguna. Pengguna diminta memasukkan nomor/ID tanaman yang hendak dihapus. Lalu sistem mengecek id. Pengecekan ini berguna sebagai Error Handling untuk mencegah KeyError. Lalu pengguaan pop(pilihan_id) untuk menghapus elemen tersebut sekaligus mengambil datanya lalu menyimpannya di variabel tanaman_dihapus. Untuk fungsi rapihkan_id_tanaman(daftar_tanaman) dipanggil untuk menyusun ulang ID yang tersisa agar kembali berurutan, lalu mengembalikan data ke data_rapi. Jika menginput selain dari itu maka datanya tidak akan berubah dan akan kembali ke menu awal.
 
 8.<img width="959" height="170" alt="Screenshot 2026-10-06 192339" src="https://github.com/user-attachments/assets/ce9325ef-5e86-4646-9b45-7823000b5c75" />
-Masuk ke halaman_admin yang berisi beberapa list dengan akses CRUD lengkap. 1(Lihat daftar tanaman READ), 2(Tambah data UPDATE), 3(Hapus data DELETE), 4(Update data tanaman UPDATE), dan 5(keluar) dari program. Lalu diberikan sebuah pilihan untuk menginput akses yang mana.
+Masuk ke halaman_admin yang berisi beberapa list dengan akses CRUD lengkap. 1(Lihat daftar tanaman READ), 2(Tambah data UPDATE), 3(Hapus data DELETE), 4(Update data tanaman UPDATE), dan 5(keluar) dari program. Lalu diberikan sebuah pilihan untuk menginput akses yang sesuai.
 
 
 9.<img width="959" height="310" alt="Screenshot 2026-10-06 192352" src="https://github.com/user-attachments/assets/330e98ef-7f04-430a-a7d8-2c4fdf05526e" />
-Pilihan 1 akan memanggil fungsi lihat_tanaman dan menginput enter untuk melanjutkan. Pilihan 2 akan memanggil fungsi tambah_tanaman dan menginput enter untuk melanjutkan. Pilihan 3, di bagian hasil akan menampung dictionary baru yang dikembalikan oleh fungsi, daftar_tanaman.clear untuk mengosongkan data lama di daftar_tanaman utama, daftar_tanaman.update untuk menambah data abaru di daftar_tanaman utama. Pilihan 3 akan memanggil fungsi update_status_tanaman dan menginput enter untuk melanjutkan. Pilihan 5 untuk keluar dari halaman admin dan masuk ke halaman utama. Jika menginput selain itu maka outputnya akan tidak valid
+Pilihan 1 akan memanggil fungsi lihat_tanaman dan menginput enter untuk melanjutkan ke menu user. Pilihan 2 akan memanggil fungsi tambah_tanaman dan menginput enter untuk melanjutkan ke menu user. Pilihan 3, di bagian hasil akan menampung dictionary baru yang dikembalikan oleh fungsi, daftar_tanaman.clear untuk mengosongkan data lama di daftar_tanaman utama, daftar_tanaman.update untuk menambah data aaru di daftar_tanaman utama dan input enter untuk melanjutkan ke menu user. Pilihan 4 akan memanggil fungsi update_status_tanaman dan menginput enter untuk melanjutkan ke menu user. Pilihan 5 untuk keluar dari halaman admin dan masuk ke halaman utama. Jika menginput selain itu maka outputnya akan tidak valid
 
 10.<img width="959" height="143" alt="Screenshot 2026-10-06 192405" src="https://github.com/user-attachments/assets/a0260fc8-dea2-419a-8378-2b7137cabc0b" />
+Masuk ke halaman_user yang berisi beberapa list dengan akses yang tidak selengkap admin . 1(Lihat daftar tanaman READ), 2(Update data tanaman UPDATE), dan 3(keluar) dari program. Lalu diberikan sebuah pilihan untuk menginput akses yang sesuai.
 
 11.<img width="959" height="274" alt="Screenshot 2026-10-06 192416" src="https://github.com/user-attachments/assets/b85cc15e-12f6-4ad5-9a0a-eabc1111aa26" />
+Pilihan 1 akan memanggil fungsi lihat_tanaman dan menginput enter untuk melanjutkan ke menu user. Pilihan 2 akan memanggil fungsi update_status_tanaman dan menginput enter untuk melanjutkan ke menu user. Pilihan 3 untuk keluar dari halaman admin dan masuk ke halaman utama. Jika menginput selain itu maka outputnya akan tidak valid.
 
 12.<img width="959" height="136" alt="Screenshot 2026-10-06 192429" src="https://github.com/user-attachments/assets/63c20533-41ad-4e22-af70-152092fc0ff8" />
+Halaman login  utama, atau program tampilan login. Berisi 2 pilihan yaitu login dan keluar, tetapi jika memilih selain dari 2 angka itu maka akan mengembalikan ke tampilan login lagi.
 
 13.<img width="959" height="53" alt="Screenshot 2026-10-06 192540" src="https://github.com/user-attachments/assets/26ace4db-e979-494f-8ce1-c21485e8c3fa" />
+Jika memilih akses pertama (login) maka user/admin harus menginput sesuai dengan data mereka
 
 14.<img width="959" height="277" alt="Screenshot 2026-10-06 192554" src="https://github.com/user-attachments/assets/70abffbd-4548-4967-9249-448604a5fe95" />
+Jika username dan passwordnya kosong maka outputnya akan invalid dan kembali ke menu tampilan login lagi. Jika menginputksn sesuai dengan role maka akan masuk ke halaman role yang sesuai dengan yang diinput. Mengetik selain dari username dan password admin/user maka akan menampilkan output invalid
 
 15.<img width="959" height="104" alt="Screenshot 2026-10-06 192603" src="https://github.com/user-attachments/assets/f2842178-a0df-4029-b8aa-bfcdd2d8733f" />
+Saat admin/user input pilihan 2 maka program akan berhenti dan tidak akan melakukan looping lagi
 
-16.<img width="959" height="64" alt="Screenshot 2026-10-06 192614" src="https://github.com/user-attachments/assets/77ff7a11-3544-4acf-81e8-873575eb7b79" />
+16.<img width="959" height="111" alt="Screenshot 2026-10-06 203245" src="https://github.com/user-attachments/assets/3eb5536e-70f7-437d-a8bb-c930efce86df" />
+Jika menginput selain dari 1 atau 2 maka outputnya akan mengalami error
 
 # Output program
 1.<img width="923" height="149" alt="Screenshot 2026-10-06 193607" src="https://github.com/user-attachments/assets/75b8eda0-19e0-41f3-bb92-c400c0d9d011" />
@@ -117,4 +125,31 @@ Tampilan keluar dari halaman user dan keluar dari sistem
 
 ## Error-handling
 
+<img width="959" height="56" alt="Screenshot 2026-10-06 205344" src="https://github.com/user-attachments/assets/87526a1a-d2f2-4ff3-9cd9-747fc9d03779" />
+Mencegah operasi pada data kosong pada lihat tanaman
+
+<img width="959" height="111" alt="Screenshot 2026-10-06 205226" src="https://github.com/user-attachments/assets/f761f36d-7295-4297-a3d5-c830151ca052" />
+Mencegah pengisian yang kosong pada nama dan jenis tanaman. Dan juga mencegah jika penulisannya tidak sama dengan Indoor dan Outdor
+
+<img width="946" height="51" alt="Screenshot 2026-10-06 205705" src="https://github.com/user-attachments/assets/40c23318-8a8f-4e6c-b278-cece3d1e6152" />
+Terjadi jika  mencoba mengakses atau menghapus key dictionary yang tidak pernah ada (misalnya pengguna mengetik ID 99 atau huruf abc)
+
+<img width="956" height="196" alt="Screenshot 2026-10-06 205013" src="https://github.com/user-attachments/assets/5a06c8fd-14b9-4d06-a948-4fcc65435c43" />
+Mencoba mengecek password dari username yang tidak ada di database_akun.
+
+
 ## 3 library
+
+### os
+<img width="959" height="23" alt="image" src="https://github.com/user-attachments/assets/89047153-8a24-4a98-a6f2-3c66e02b8d08" />
+Penggunaan os di sini adalah untuk merapikan folder agar tidak muncul saat menjalankan program, tempat foldernya berada akan kosong dan hanya akan menampilkan kode
+
+### time
+<img width="959" height="31" alt="Screenshot 2026-10-06 204014" src="https://github.com/user-attachments/assets/a3a9ad72-258a-4d2d-89b3-6149e6bc1387" />
+
+<img width="956" height="32" alt="Screenshot 2026-10-06 203949" src="https://github.com/user-attachments/assets/4c94bd07-5ef1-4ec2-85ea-164d41ac888a" />
+Penggunaan time untuk menjeda waktu saat admin/user ingin keluar, agar terlihat seperti program sedang loading untuk mematikan/keluar dari sistem
+
+### pwinput
+<img width="959" height="50" alt="image" src="https://github.com/user-attachments/assets/f39e9365-0c43-40a3-affb-784304b6be89" />
+Penggunaan pwinput untuk menyembunyikan password dengan tanda *(bintang) untuk menghindari terjadi pembocoran password atau merahasiakan password yang diinput
